@@ -3,7 +3,7 @@ const router = Router();
 
 router.get("/", async (req, res) => {
     try {
-        res.json({ todos: [] });
+        res.json({ todos: [], message: "Working Fine!!!" });
     } catch (error) {
         console.log(error);
     }

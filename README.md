@@ -17,3 +17,15 @@ docker run -it --rm -v "path_to_root_directory":/app docker_image_name user_comm
 ```
 docker run -it --rm -p 3000:3000 docker_image_name
 ```
+
+### Command to create a network
+
+```
+docker network create -d bridge network_name
+```
+
+### Command to run MongoDB container as a database
+
+```
+docker run --rm -d -v database_name:/data/db --name mongo_server_name --network network_name mongo
+```
